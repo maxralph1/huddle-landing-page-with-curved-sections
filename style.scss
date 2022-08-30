@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap');
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+ --pink: hsl(322, 100%, 66%);
+ --light-pink: hsl(321, 100%, 78%);
+ --light-red: hsl(0, 100%, 63%);
+ --dark-cyan: hsl(192, 100%, 9%);
+ --pale-blue: hsl(207, 100%, 98%);
+ --white: hsla(0, 0%, 100%, 0.85);
+ --gray: hsl(0, 0%, 50%);
+}
+
+*, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ /* font-family: 'Poppins', sans-serif; */
+ /* font-family: 'Open Sans', sans-serif; */
+}
+
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 4em auto;
+
+
+  img {
+   width: 25%;
+   height: 20%;
+   margin-left: 1em;
+  }
+
+  .button {
+   margin-right: 1em;
+   border: 0.1rem solid var(--pink);
+   color: var(--pink);
+   border-radius: 25px;
+   padding: 0.4em 2em;
+   font-size: 0.45rem;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   // font-weight: 100;
+   box-shadow: 0.1px 0.1px 2px var(--gray);
+
+   &:hover {
+    // opacity: 0.5;
+    border: 0.1rem solid var(--light-pink);
+    color: var(--light-pink);
+   }
+  }
+ 
+}
+
+
+main {
+ margin: 5rem 0;
+ text-align: center;
+
+ .intro {
+  max-width: 80%;
+  margin: 0 auto;
+
+  .heading {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.2rem;
+  }
+
+  .description {
+   margin-top: 0.9rem;
+   font-family: 'Poppins', sans-serif;
+   font-size: 0.65rem;
+   font-weight: 400;
+   margin-bottom: 3em;
+  }
+
+  .button {
+   background-color: var(--pink);
+   color: var(--white);
+   padding: 1.2em 3.5em;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+   font-size: 0.55rem;
+   border-radius: 25px;
+   box-shadow: 0.1px 0.1px 5px var(--gray);
+
+   &:hover {
+    // opacity: 0.85;
+    background-color: var(--light-pink);
+   }
+  }
+
+  .screen-mockups {
+   margin-top: 5rem;
+   max-width: 100%;
+  }
+ }
+
+
+ .stats {
+  margin: 5rem 0;
+
+  .stat {
+   margin: 5rem 0;
+   display: block;
+   // flex-direction: column;
+
+   .img {
+    width: 1.35em;
+    margin-left: -5.5em;
+   }
+
+   .data {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+   }
+
+   .description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+   }
+  }
+
+ }
+
+
+ .illustrations {
+  margin: 5rem 0;
+  
+  .illustration {
+   margin: 5rem 0;
+
+   .image {
+    img {
+     width: 80%;
+    }
+   }
+
+   .details {
+    margin: 3.5rem auto;
+    width: 80%;
+
+    h2 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1rem;
+    }
+    p {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 0.7rem;
+    }
+   }
+
+  }
+
+  // .illustration_1 {
+  //  position: relative;
+
+  //  &::before {
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url("./images/bg-section-top-mobile-1.svg");
+  //   background-repeat: no-repeat;
+  //   inset: 0;
+  //   z-index: -1;
+  //  }
+   
+  // }
+
+  // .illustration_3 {
+  //  background-image: url("./images/bg-section-top-mobile-2.svg");
+  //  background-repeat: no-repeat;
+  // }
+
+ }
+
+
+ .cta {
+  font-family: 'Poppins', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+
+  h2 {
+   font-size: 1rem;
+   color: var(--dark-cyan);
+   margin: 0 auto 1.5rem;
+  }
+  .button {
+   background-color: var(--pink);
+   color: var(--white);
+   padding: 0.5rem 1.85rem;
+   border-radius: 25px;
+   text-decoration: none;
+   font-size: 0.55rem;
+   box-shadow: 0.1px 0.1px 5px var(--gray);
+
+   &:hover {
+    // opacity: 0.85;
+    background-color: var(--light-pink);
+   }
+  }
+ }
+
+}
+
+
+
+footer {
+ font-family: 'Open Sans', sans-serif;
+ color: var(--white);
+ background-color: var(--white);
+ background-color: var(--dark-cyan);
+ position: relative;
+ padding: 2rem 1.5rem;
+
+ &::before {
+  content: "";
+  background-image: url("./images/bg-footer-top-mobile.svg");
+  // top: -50px;
+  // left: 0;
+  // right: 0;
+  inset: -50px 0 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+ }
+
+ .newsletter {
+  .header {
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   margin-bottom: 1em;
+   font-weight: 700;
+  }
+  .description {
+   font-size: 0.65rem;
+   margin-bottom: 2em;
+  }
+
+  form {
+   display: flex;
+   flex-direction: column;
+
+   .input {
+    border-radius: 5px;
+    border: none;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    width: 100%;
+   }
+
+   .button {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.85em 3em;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.65rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+    align-self: flex-end;
+
+    &:hover {
+     background-color: var(--light-pink);
+    }
+   }
+  }
+
+ }
+
+ .contact {
+  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  
+  img {
+   color: var(--white);
+   width: 15em;
+   background-color: var(--white);
+   margin-top: 5em;
+  }
+  .description {
+   font-size: 0.7rem;
+   margin: 0.7em auto -2.5em;
+  }
+  
+  .tel, .email {
+   margin-bottom: -3.5em;
+
+   img {
+    width: 1.1em;
+    background-color: transparent;
+    margin-bottom: -0.1rem;
+   }
+   
+   a {
+    color: var(--white);
+    text-decoration: none;
+   }
+  }
+ }
+ 
+
+ .social {
+  margin-top: 5em;
+  
+  &>* {
+   margin-right: 0.5rem;
+   font-size: 1.25rem;
+  }
+  .fa-square-facebook{
+   
+  }
+  .fa-square-instagram{
+
+  }
+  .fa-square-twitter{
+
+  }
+ }
+
+ // frontendmentor.io attribution
+
+ .frontendmentor {
+  font-family: 'Poppins', sans-serif;
+  margin: 3em auto;
+
+  .attribution {
+   font-size: 11px;
+   text-align: center;
+
+   a {
+    color: var(--white);
+    opacity: 0.9;
+   }
+  }
+ }
+}
+
+
+@media screen and (min-width: 375px) {
+ header,
+ main,
+ footer {
+  max-width: 374px;
+  margin: 5rem auto;
+ }
+
+ footer {
+  margin-top: 15rem;
+ }
+}
+
+@media screen and (min-width: 400px) {
+ header,
+ main,
+ footer {
+  max-width: 1000px;
+  margin: 5rem auto;
+ }
+
+ header {
+  margin: 4em auto;
+
+   img {
+    width: 25%;
+    height: 20%;
+    margin-left: 2em;
+   }
+
+   .button {
+    margin-right: 2em;
+    padding: 0.6em 3em;
+    font-size: 0.6rem;
+    }
+   
+ }
+
+ main {
+
+  .intro {
+   max-width: 90%;
+   margin: 0 auto;
+   display: block;
+
+   .heading {
+    font-size: 1.3rem;
+   }
+
+   .description {
+    max-width: 50%;
+    margin: 0.9rem auto 0;
+    margin-bottom: 1.5rem;
+   }
+
+   .button {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.7rem 2.65rem;
+    font-size: 0.5rem;
+
+   }
+
+   .screen-mockups {
+    margin-top: 3rem;
+    max-width: 80%;
+   }
+  }
+
+
+  .stats {
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+   width: 75%;
+
+   .stat {
+    // margin: 5rem 0;
+
+    .img {
+
+    }
+
+    .data {
+
+    }
+
+    .description {
+ 
+    }
+   }
+
+  }
+
+
+  .illustrations {
+   // margin: 5rem 0;
+   margin: auto 5rem;
+   text-align: start;
+   
+   .illustration {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    align-items: center;
+
+    .image {
+     width: 50%;
+     
+     img {
+      width: 80%;
+     }
+    }
+
+    .details {
+     margin: 3.5rem auto;
+     width: 50%;
+
+     h2 {
+      // font-size: 1rem;
+     }
+     p {
+      // font-size: 0.7rem;
+     }
+    }
+
+   }
+
+   .illustration_1, .illustration_3 {
+    flex-direction: row-reverse;
+   }
+
+  }
+
+
+  .cta {
+   width: 80%;
+   margin: 0 auto;
+
+   h2 {
+    font-size: 1rem;
+    color: var(--dark-cyan);
+    margin: 0 auto 0.75em;
+   }
+   .button {
+    // padding: 0.5rem 1.85rem;
+    padding: 0.7rem 2.65rem;
+    font-size: 0.5rem;
+
+   }
+  }
+
+ }
+
+ footer {
+  padding: 2em 3em;
+  margin: 20em auto 0;
+
+  &::before {
+   content: "";
+   background-image: url("./images/bg-footer-top-desktop.svg");
+   inset: -150px 0 0 0;
+   background-repeat: no-repeat;
+   position: absolute;
+   width: 100%;
+   // height: 50%;
+   z-index: -2;
+  }
+
+  .flex {
+   display: flex;
+   flex-direction: row-reverse;
+   // align-items: center;
+   justify-content: space-between;
+   gap: 20%;
+   margin: 0 auto;
+
+   .large-right {
+    // width: 50%;
+
+    .newsletter {
+     .header {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+      font-weight: 700;
+     }
+     .description {
+      font-size: 0.65rem;
+      margin-bottom: 2em;
+      width: 70%;
+     }
+
+     form {
+      display: inline-block;
+      width: 100%;
+
+      .input {
+       border-radius: 3px;
+       border: none;
+       width: 50%;
+       padding: 0.3em;
+       margin-right: 1em;
+      }
+
+      .button {
+       padding: 0.85em 3em;
+       border-radius: 3px;
+       border: none;
+       font-size: 0.5rem;
+       width: 40%;
+       margin-right: 0;
+      }
+     }
+
+    }
+   }
+
+   .large-left {
+    margin-top: -3.5em;
+
+    .contact {
+     font-size: 0.7rem;
+     
+     img {
+      color: var(--white);
+      width: 12em;
+      background-color: var(--white);
+     }
+     .description {
+      font-size: 0.65rem;
+      margin: 0.7em 0 -2.5em;
+      width: 70%;
+     }
+     
+     .tel, .email {
+      // margin-bottom: -3.5em;
+
+      img {
+       width: 1.1em;
+       background-color: transparent;
+       margin-bottom: -0.1rem;
+      }
+      
+      a {
+       color: var(--white);
+       text-decoration: none;
+      }
+     }
+    }
+    
+
+    .social {
+     margin-top: 5em;
+     
+     &>* {
+      margin-right: 0.5rem;
+      font-size: 1.25rem;
+     }
+    }
+
+   }
+  }
+
+
+
+  // frontendmentor.io attribution
+
+  .frontendmentor {
+   font-family: 'Poppins', sans-serif;
+   margin: 3em auto;
+
+   .attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+     color: var(--white);
+     opacity: 0.9;
+    }
+   }
+  }
+
+ }
+}
+
+// Note that this code could be refactored at a later date. For instance, the flex would be turned into a utility class and applied on all areas where flex is repeated (instead of simply having the 'class="flex"' on just the footer section).
